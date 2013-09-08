@@ -110,7 +110,7 @@ jQuery(function($) {
     $('#log').val( $('#log').val() + text + "\n");
   };
   var ws;
-  var url = 'ws://colinux:3000/echo';
+  var url = 'ws://localhost:3000/echo';
   if(typeof WebSocket != 'undefined'){
     ws = new WebSocket(url);
   }else if(typeof MozWebSocket != 'undefined'){
